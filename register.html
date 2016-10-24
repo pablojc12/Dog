@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Registro</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="icon" type="image/png" href="images/favIcon.png" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <!-- estilos de alertas -->
+        <link rel="stylesheet" href="alertify/themes/alertify.core.css" />
+        <link rel="stylesheet" href="alertify/themes/alertify.default.css" />
+
+    </head>
+    <body>
+
+        <!-- Page Wrapper -->
+        <div id="page-wrapper">
+
+            <!-- Header -->
+            <header id="header">
+                <h1><a href="index.html">The house dog</a></h1>
+                <nav>
+                    <a href="#menu">Menu</a>
+                </nav>
+            </header>
+
+            <!-- Menu -->
+            <nav id="menu">
+                <div class="inner">
+                    <h2>Menu</h2>
+                    <ul class="links" id="menuMaster">
+                        
+                    </ul>
+                    <a href="#" class="close">Close</a>
+                </div>
+            </nav>
+
+            <!-- Wrapper -->
+            <section id="wrapper">
+                <header>
+                    <div class="inner">
+                        <h2>Regístrate</h2>
+                        <p>Al registrarte podras tener todos nuestros beneficios</p>
+                    </div>
+                </header>
+
+                <!-- Content -->
+                <section id="four" class="wrapper alt style1">
+                    <div class="inner">
+                        <h2 class="major">Usuario nuevo</h2>
+                        <p>¡Es momento de que te registres, es gratis!</p>
+                        <form action="javascript:;" name="form">
+                            <div class="row uniform">
+                                <div class="9u 12u$(xsmall)">
+                                    <input type="email" name="correo" id="correo" autocomplete="off" 
+                                           onblur="validaEmail(this.value)"/>
+                                    <label for="correo">Correo Electronico</label>
+                                    <input type="password" name="contrasena" id="contrasena" autocomplete="off" 
+                                           onblur="comparaPassword(this.value)"/>
+                                    <label for="contrasena">Contraseña</label>
+                                    <input type="password" name="rContrasena" id="rContrasena" autocomplete="off"
+                                           onblur="comparaPassword(lee(form['contrasena']), this.value)"/>
+                                    <label for="rContrasena">Confirmar Contraseña</label>
+                                </div>
+                                <div class="3u$ 12u$(xsmall)">
+                                    <p>Si olvidaste la contraseña puedes recuperarla dando clic en el siguiente viculo</p>
+                                    <b><a href="">RECUPERAR CONTRASEÑA</a></b>
+                                </div>
+                                <div class="9u 12u$(xsmall)">
+                                    <ul class="actions vertical">
+                                        <li><a class="button special fit" onclick="enviar()">Registrar</a></li>
+                                        <li><input type="reset" value="Borrar" class="button fit"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </section>
+            <!-- Footer -->
+            <section id="footer">
+                <div class="inner">
+                    <ul class="copyright">
+                        <li>&copy; Todos los derechos Reservados</li><li>Desarrollado : Developer Machine</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <!-- Scripts -->
+        <!-- js de template-->
+        <script src="js/constantes.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+        <!-- js de alertas -->
+        <script type="text/javascript" src="alertify/lib/alertify.js"></script>
+        <script type="text/javascript" src="alertify/alert.js"></script>
+
+        <!-- js de validacion y carga -->
+        <script src="js/checkSesion.js"></script>
+        <script src="js/utileria.js"></script>
+        <script src="js/register.js"></script>
+    </body>
+</html>
